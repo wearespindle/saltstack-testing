@@ -25,39 +25,38 @@ Enough talk, let's see how we can do this within our own development process usi
 
 ---
 
-# Table of contents
-- [saltstack-testing](#saltstack-testing)
+## Table of contents
 - [Testing salt states with kitchen](#testing-salt-states-with-kitchen)
-- [Table of contents](#table-of-contents)
-- [Prerequisites](#prerequisites)
-    - [Ruby](#ruby)
-    - [Python](#python)
-    - [Vagrant + VirtualBox](#vagrant-virtualbox)
-- [Setup](#setup)
-- [kitchen usage](#kitchen-usage)
-- [Writing your own tests using Python](#writing-your-own-tests-using-python)
+    - [Table of contents](#table-of-contents)
+    - [Prerequisites](#prerequisites)
+        - [Ruby](#ruby)
+        - [Python](#python)
+        - [Vagrant + VirtualBox](#vagrant-virtualbox)
+    - [Setup](#setup)
+        - [kitchen usage](#kitchen-usage)
+    - [Writing your own tests using Python](#writing-your-own-tests-using-python)
     - [Contributing](#contributing)
     - [Contributors](#contributors)
     - [Changelog](#changelog)
     - [Get in touch with a developer](#get-in-touch-with-a-developer)
     - [License](#license)
 
-# Prerequisites
+## Prerequisites
 Before you can get started you'll need a few things setup on your system.
 
-## Ruby 
+### Ruby 
 Version 2.4 is preferred but this will work with versions >= 1.9. 
 I prefer using [rvm](https://rvm.io) to manage my different Ruby setups but this is not required.
 [Here's](https://rvm.io/rvm/install) some information on getting rvm set up.
 
-## Python
+### Python
 Both Python 2 and 3 will work fine. Again, you could use [virtualenv](https://virtualenv.pypa.io) to manage your Python
 setup but this is not required. Also make sure that `pip` is installed alongside your Python installation.
 
-## Vagrant + VirtualBox
+### Vagrant + VirtualBox
 Both [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org) need to be installed in order to continue.
 
-# Setup
+## Setup
 Once you have the prerequisites setup on your system it's now time to get setup. Open a terminal and `cd` into the saltstack repository.
 ```
 $ cd ~/dev/saltstack # or wherever you've got the repo checked out
@@ -73,7 +72,7 @@ $ pip install -r requirements.txt
 ```
 That's it! You're now ready to write and run kitchen tests.
 
-# kitchen usage
+### kitchen usage
 Now that everything's set up it's time to learn how to use `kitchen` and write tests that can be run locally.
 
 `kitchen` has one point of entry, the `.kitchen.yml` file living in the root of our project. Here's an example setup of the `.kitchen.yml` file:
@@ -144,7 +143,7 @@ Here's a quick overview of some commands that can be useful while developing wit
 
 ***Note: If the kitchen command can't be found in your path try running it with `bundle exec` prepended (e.g. `bundle exec kitchen test`)***
 
-# Writing your own tests using Python
+## Writing your own tests using Python
 It's all good and well that you can run the existing `kitchen` test suite but ofcourse you'd like to write your own tests so that you can verify that your new states are working as expected.
 Lucky for you I was just going to get to that! (the title gave it away didn't it?)
 
