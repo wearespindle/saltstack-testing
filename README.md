@@ -1,7 +1,3 @@
-# saltstack-testing
-
-This repository contains a template with everything you need to start testing your salt states using [Kitchen](https://kitchen.ci) and [Testinfra](http://testinfra.readthedocs.io/en/latest/). This project uses Vagrant/VirtualBox but [other drivers](https://github.com/test-kitchen/test-kitchen/blob/master/ECOSYSTEM.md) can be used as well.
-
 # Testing salt states with kitchen
 `kitchen` provides a test harness to execute infrastructure code on one or more platforms in isolation.
 The modular setup of kitchen allows for different cloud providers to execute the same test setup.
@@ -29,16 +25,22 @@ Enough talk, let's see how we can do this within our own development process usi
 
 ---
 
-# Table of Contents
+# Table of contents
+- [saltstack-testing](#saltstack-testing)
 - [Testing salt states with kitchen](#testing-salt-states-with-kitchen)
-- [Table of Contents](#table-of-contents)
+- [Table of contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
-  - [Ruby](#ruby)
-  - [Python](#python)
-  - [Vagrant + VirtualBox](#vagrant-virtualbox)
+    - [Ruby](#ruby)
+    - [Python](#python)
+    - [Vagrant + VirtualBox](#vagrant-virtualbox)
 - [Setup](#setup)
 - [kitchen usage](#kitchen-usage)
 - [Writing your own tests using Python](#writing-your-own-tests-using-python)
+    - [Contributing](#contributing)
+    - [Contributors](#contributors)
+    - [Changelog](#changelog)
+    - [Get in touch with a developer](#get-in-touch-with-a-developer)
+    - [License](#license)
 
 # Prerequisites
 Before you can get started you'll need a few things setup on your system.
