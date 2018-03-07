@@ -33,7 +33,7 @@ Enough talk, let's see how we can do this within our own development process usi
         - [Python](#python)
         - [Vagrant + VirtualBox](#vagrant-virtualbox)
         - [Gems and Pip packages](#gems-and-pip-packages)
-        - [kitchen usage](#kitchen-usage)
+    - [kitchen usage](#kitchen-usage)
     - [Writing your own tests using Python](#writing-your-own-tests-using-python)
     - [Contributing](#contributing)
     - [Contributors](#contributors)
@@ -72,7 +72,7 @@ $ pip install -r requirements.txt
 ```
 That's it! You're now ready to write and run kitchen tests.
 
-### kitchen usage
+## kitchen usage
 Now that everything's set up it's time to learn how to use `kitchen` and write tests that can be run locally.
 
 `kitchen` has one point of entry, the `.kitchen.yml` file living in the root of our project. Here's an example setup of the `.kitchen.yml` file:
