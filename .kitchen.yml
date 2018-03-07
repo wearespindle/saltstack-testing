@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: debian/contrib-jessie64
+
+provisioner:
+  name: salt_solo
+  is_file_root: true
+  local_salt_root: '.'
+  state_top_from_file: true
+  require_chef: false
+  # These grains will be set in each suite (global grains)
+  grains:
+    kitchen: enabled
+
+suites:
+  - name: base
+    verifier:
+      name: shell
+      command: py.test -v test/base
