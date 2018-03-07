@@ -32,7 +32,7 @@ Enough talk, let's see how we can do this within our own development process usi
         - [Ruby](#ruby)
         - [Python](#python)
         - [Vagrant + VirtualBox](#vagrant-virtualbox)
-    - [Setup](#setup)
+        - [Gems and Pip packages](#gems-and-pip-packages)
         - [kitchen usage](#kitchen-usage)
     - [Writing your own tests using Python](#writing-your-own-tests-using-python)
     - [Contributing](#contributing)
@@ -56,7 +56,7 @@ setup but this is not required. Also make sure that `pip` is installed alongside
 ### Vagrant + VirtualBox
 Both [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org) need to be installed in order to continue.
 
-## Setup
+### Gems and Pip packages
 Once you have the prerequisites setup on your system it's now time to get setup. Open a terminal and `cd` into the saltstack repository.
 ```
 $ cd ~/dev/saltstack # or wherever you've got the repo checked out
